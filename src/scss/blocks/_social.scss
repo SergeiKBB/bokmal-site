@@ -1,0 +1,14 @@
+.social {
+    width: 210px;
+
+    &__title {
+        margin: 0 0 40px;
+        @include text-regular(PN, semi);
+        color: $text-l-color;
+        letter-spacing: 0.5px;
+    }
+
+    &__icons {
+        color: $text-l-color;
+    }
+}

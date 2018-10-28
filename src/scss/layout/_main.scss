@@ -1,0 +1,47 @@
+.main {
+  position: relative;
+  margin-top: 57px;
+
+  &__sort {
+    margin: 50px auto;
+  }
+
+  &__review {
+    margin-top: 70px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 90px;
+  }
+
+  &__advice {
+    margin-top: 100px;
+    background-image: url('../image/advice__img.png');
+  }
+
+  &__teen-review {
+    margin-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  &__autors-column {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 70px;
+  }
+}
+
+.m-b-30 {
+  margin-bottom: 30px;
+}
+
+.m-l-25 {
+  margin-left: 25px;
+}
+
+.underline_red {
+  border-bottom: 3px solid $main-kids-color;
+}

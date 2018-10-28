@@ -1,0 +1,42 @@
+.service {
+  display: flex;
+  align-items: center;
+  padding: $header-padding;
+  font-size: 20px;
+
+  &__search {
+    margin-right: 20px;
+    @include icon("\f002");
+    &::before {
+      cursor: pointer;
+    }
+  }
+
+  &__bookmark {
+    @include icon("\f02e");
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+
+    &-quantity {
+      display: none;
+    }
+    
+    &:hover {
+      font-weight: 900;
+    }
+
+    &::before {
+      cursor: pointer;
+    }
+    // &:hover &{
+      
+    //   &-quantity {
+    //     display: flex;
+    //     @include text-regular(PN, semi);
+    //     color: $text-l-40-color;
+    //     margin-left: 5px;
+    //   }
+    // }
+  }
+}

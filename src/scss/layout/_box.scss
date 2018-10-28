@@ -1,0 +1,15 @@
+.box {
+    width: 1120px;
+    margin: 0 auto;
+
+    &_width {
+        &_max {
+            width: auto;
+            margin: 0;
+        }
+    }
+
+    &_bgcolor_green  {
+        background-color: $line-color;    
+    }
+}

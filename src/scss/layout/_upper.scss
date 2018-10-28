@@ -1,0 +1,39 @@
+.upper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  width: 100%;
+  border: 1px solid $line-d-color;
+  color: $text-color;
+  background-color: $background-color;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    @include heading3(semi);
+    padding: $header-padding;
+    border-right: 1px solid $line-d-color;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &__category {
+    padding: $header-padding;
+    margin-right: auto;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    padding: $header-padding;
+  }
+
+  &__service {
+    border-left: 1px solid $line-d-color;
+  }
+}
+
+
+

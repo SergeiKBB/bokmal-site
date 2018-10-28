@@ -1,0 +1,22 @@
+.grid {
+    display: grid;
+    grid-template-areas: "upper upper"
+                         "sidebar header"
+                         "sidebar main";
+    
+    &__upper {
+        grid-area: upper;
+    }
+
+    &__sidebar {
+        grid-area: sidebar;
+    }
+    
+    &__header {
+        grid-area: header;
+    }
+
+    &__main {
+        grid-area: main;
+    }
+}

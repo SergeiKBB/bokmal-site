@@ -1,0 +1,30 @@
+//CORE
+@import "core/base";
+@import "core/var";
+@import "core/mixins";
+@import "core/fonts";
+
+//BLOCKS
+@import "blocks/category";
+@import "blocks/menu";
+@import "blocks/service";
+@import "blocks/sidebar";
+@import "blocks/navigation";
+@import "blocks/elements";
+@import "blocks/header";
+@import "blocks/review";
+@import "blocks/preview";
+@import "blocks/cards";
+@import "blocks/advice";
+@import "blocks/teen-review";
+@import "blocks/autors-column";
+@import "blocks/subscription";
+@import "blocks/social";
+@import "blocks/copyright";
+
+
+//LAYOUT
+@import "layout/upper";
+@import "layout/box";
+@import "layout/main";
+@import "layout/footer";

@@ -1,0 +1,74 @@
+@mixin check-type($font,$type) {
+  @if $font == PN {
+    @if $type == extra {
+      font-family: "PN Extra Bold";
+    } @else if $type == regular {
+      font-family: "PN Regular";
+    } @else if $type == semi {
+      font-family: "PN Semibold";
+    }
+  } @else if $font == Lora {
+    @if $type == bold {
+      font-family: "Lora Bold";
+    } @else if $type == regular {
+      font-family: "Lora Regular";
+    } @else if $type == italic {
+      font-family: "Lora Bold Italic";
+    }
+  }
+}
+
+@mixin  heading1($type) {
+  @include check-type(PN,$type);
+  font-size: 42px;
+}
+
+@mixin  heading2($type) {
+  @include check-type(PN,$type);
+  font-size: 32px;
+}
+
+@mixin heading3($type) {
+  @include check-type(PN,$type);
+  font-size: 18px;
+}
+
+@mixin button-text($type) {
+  @include check-type(PN,$type);
+  font-size: 14px;
+}
+
+@mixin text-regular($font, $type) {
+  @include check-type($font,$type);
+  @if $font == PN {
+    font-size: 14px;
+  } @else if $font == Lora {
+    font-size: 16px;
+  }
+}
+
+@mixin icon($content) {
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  &::before {
+    content: $content;
+    font-family: "Font Awesome 5 Free";
+  }
+}
+
+%btn {
+  @include button-text(semi);
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: $active-color;
+  user-select: none;
+  cursor: pointer;
+}
+

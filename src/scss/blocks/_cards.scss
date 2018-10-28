@@ -1,0 +1,40 @@
+.card {
+    width: 340px;
+
+    &__category {
+        display: inline-block;
+        margin-bottom: 15px;
+        @include heading3(semi);  
+        text-transform: uppercase;
+        color: $active-color;  
+    }
+
+    &__info {
+        margin: 15px 0;
+        font-size: 12px;
+    }
+
+    &__title {
+        margin: 20px 0;
+        @include heading3(semi);
+    }
+
+    &__img {
+
+        &-wrapper {
+            position: relative;
+        }
+    }
+
+    &__bookmark {
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+        transform: translate(0, 50%);
+    }
+
+    &__more {
+        margin: 60px auto 90px;
+    }
+    
+}

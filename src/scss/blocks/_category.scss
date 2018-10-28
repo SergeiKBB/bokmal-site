@@ -1,0 +1,73 @@
+.category {
+  &__checkbox {
+    display: none;
+    &:checked {
+      & ~ label i {
+        transform: rotate(180deg);
+      }
+
+      & ~ .category__list {
+        display: flex;
+      }
+    }
+  }
+
+  &__btn {
+    position: relative;
+    @extend %btn;
+    display: block;
+  }
+
+  &__chevron {
+    margin-left: 15px;
+    font-size: 12px;
+    @include icon("\f078");
+  }
+
+  &__list {
+    position: fixed;
+    width: 100vw;
+    height: fit-content;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    transform: translate(0, 57%);
+    margin: 0;
+    padding: 40px 0;
+    border-bottom: 1px solid $line-d-color;
+    list-style: none;
+    background-color: $background-color;
+  }
+
+  &__item {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 12px;
+      margin: 0 55px;
+      border: 1px solid $line-d-color;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    @include heading3(semi);
+    color: $text-color;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $active-d-color;
+      text-decoration: none;
+    }
+  }
+
+  &__label {
+    margin: 0;
+  }
+}

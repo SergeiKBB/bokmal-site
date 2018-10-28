@@ -1,0 +1,30 @@
+.review {
+    position: relative;
+    
+    &__preview {
+        position: absolute;
+        top: 30px;
+        left: 545px;
+        width: 450px;
+        box-sizing: border-box;
+        
+
+        &::before {
+            position: absolute;
+            top: 85px;
+            left: 0;
+            transform: translate(-50%);
+        }
+
+        &::after {
+            content: "Огляди";
+            position: absolute;
+            top: -25px;
+            right: 0;
+            transform: translate(0, -50%);
+            @include text-regular(PN,semi);
+            text-transform: uppercase;
+            color: $active-color;
+        }
+    }
+}

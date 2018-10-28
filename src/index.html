@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="upper">
+        <span class="upper__logo">Bokmal</span>
+        <div class="upper__category category">
+            <input type="checkbox" class="category__checkbox" id="forAll">
+            <label for="forAll" class="category__label">
+                <span class="category__btn">Для усіх
+                    <i class="category__chevron"></i>
+                </span>
+            </label>
+            <ul class="category__list">
+                <li class="category__item">
+                    <a href="" class="category__link">Для усіх</a>
+                </li>
+                <li class="category__item">
+                    <a href="" class="category__link">Baby side</a>
+                </li>
+                <li class="category__item">
+                    <a href="" class="category__link">Teen side</a>
+                </li>
+            </ul>
+        </div>
+        <div class="upper__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="" class="menu__link">Про Букмоль</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Співпраця</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Підтримка</a>
+                </li>
+            </ul>
+        </div>
+        <div class="upper__service service">
+            <i class="service__search"></i>
+            <i class="service__bookmark">
+                <span class="service__bookmark-quantity">19</span>
+            </i>
+        </div>
+    </section>
+    <main class="main">
+
+        <!-- ----- SIDEBAR ------>
+        <div class="main__sidebar sidebar">
+            <input type="checkbox" class="sidebar__checkbox" id="sidebar__checkbox">
+            <div class="sidebar__band">
+                <label for="sidebar__checkbox" class="sidebar__label">
+                    <i class="sidebar__burger fas fa-bars"></i>
+                    <i class="sidebar__close fas fa-times"></i>
+                </label>
+            </div>
+            <nav class="sidebar__navigation navigation" id="sidebar__navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <label for="navigation__main" class="navigation__label">
+                            <input type="radio" class="navigation__radio" id="navigation__main" name="navigation__radio">
+                            <a href="" class="navigation__link">Головна</a>
+                        </label>
+                    </li>
+                    <li class="navigation__item">
+                        <label for="navigation__top" class="navigation__label">
+                            <input type="radio" class="navigation__radio" id="navigation__top" name="navigation__radio">
+                            <a href="" class="navigation__link">Топ</a>
+                        </label>
+                    </li>
+                    <li class="navigation__item">
+                        <label for="navigation__reviews" class="navigation__label">
+                            <input type="radio" class="navigation__radio" id="navigation__reviews" name="navigation__radio">
+                            <a href="" class="navigation__link">Огляди</a>
+                        </label>
+                    </li>
+                    <li class="navigation__item">
+                        <label for="navigation__useful-articles" class="navigation__label">
+                            <input type="radio" class="navigation__radio" id="navigation__useful-articles" name="navigation__radio">
+                            <a href="" class="navigation__link">Корисні статті</a>
+                        </label>
+                    </li>
+                    <li class="navigation__item">
+                        <label for="navigation__news" class="navigation__label">
+                            <input type="radio" class="navigation__radio" id="navigation__news" name="navigation__radio">
+                            <a href="" class="navigation__link">Новини</a>
+                        </label>
+                    </li>
+                    <li class="navigation__item">
+                        <label for="navigation__authors-column" class="navigation__label">
+                            <input type="radio" class="navigation__radio" id="navigation__authors-column" name="navigation__radio">
+                            <a href="" class="navigation__link">Авторська колонка</a>
+                        </label>
+                    </li>
+                    <li class="navigation__item">
+                        <label for="navigation__interactive" class="navigation__label">
+                            <input type="radio" class="navigation__radio" id="navigation__interactive" name="navigation__radio">
+                            <a href="" class="navigation__link">Інтерактив</a>
+                        </label>
+                    </li>
+                    <li class="navigation__item">
+                        <label for="navigation__litclub" class="navigation__label">
+                            <input type="radio" class="navigation__radio" id="navigation__litclub" name="navigation__radio">
+                            <a href="" class="navigation__link">Літклуб</a>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar__background"></div>
+        </div>
+
+        <!------- HEADER -------->
+        <header class="main__header header box box_width_max">
+            <p class="header__category">Корисні статті</p>
+            <h1 class="header__title">Тварини Патріка Джорджа: врятуй їх усіх</h1>
+            <div class="header__info info">
+                <span class="info__date">1 жовтня, 2017</span>
+                <span class="info__views">980</span>
+            </div>
+            <div class="header__wrapper">
+                <button class="header__btn btn btn_read">Читати</button>
+                <i class="header__bookmark bookmark bookmark_normal bookmark_orange "></i>
+            </div>
+        </header>
+
+        <!------- SORT -------->
+        <div class="main__sort sort box">
+            <ul class="sort__list">
+                <li class="sort__item">
+                    <span href="" class="sort__title">Сортувати за:</span>
+                </li>
+                <li class="sort__item sort__item_active">
+                    <a href="" class="sort__link">Популярністю</a>
+                </li>
+                <li class="sort__item">
+                    <a href="" class="sort__link">Новизною</a>
+                </li>
+            </ul>
+        </div>
+
+        <!------- REVIEW -------->
+        <div class="main__review review box">
+            <img src="image/review__img.jpg" alt="" class="review__img underline_red">
+            <div class="review__preview preview">
+                <div class="preview__info info">
+                    <span class="info__date">Сьогодні</span>
+                    <span class="info__views">32</span>
+                </div>
+                <h2 class="preview__title">Шість пригодницьких історій для літнього читання</h2>
+                <button class="preview__btn btn btn_read">Читати</button>
+                <i class="preview__bookmark bookmark bookmark_normal bookmark_orange "></i>
+            </div>
+        </div>
+
+        <!------- CARDS -------->
+        <div class="main__cards box">
+            <div class="main__card card">
+                <span class="card__category">Корисні статті</span><img src="" alt="" class="card__img">
+                <div class="card__img-wrapper">
+                    <img src="image/card_1.jpg" alt="" class="card__img">
+                    <i class="card__bookmark bookmark bookmark_normal bookmark_orange "></i>
+                </div>
+                <div class="card__info info">
+                    <span class="info__date">1 Жовтня, 2017</span>
+                    <span class="info__views">980</span>
+                </div>
+                <h3 class="card__title">Найкращі дитячі ілюстратори незалежної України</h3>
+            </div>
+            <div class="main__card card">
+                <span class="card__category">Афіша</span><img src="" alt="" class="card__img">
+                <div class="card__img-wrapper">
+                    <img src="image/card_1.jpg" alt="" class="card__img">
+                    <i class="card__bookmark bookmark bookmark_normal bookmark_orange "></i>
+                </div>
+                <div class="card__info info">
+                    <span class="info__date">22 Вересня, 2017</span>
+                    <span class="info__views">145</span>
+                </div>
+                <h3 class="card__title">Вихідні з дітьми: 9-10 вересня</h3>
+            </div>
+            <div class="main__card card">
+                <span class="card__category">Літклуб</span><img src="" alt="" class="card__img">
+                <div class="card__img-wrapper">
+                    <img src="image/card_1.jpg" alt="" class="card__img">
+                    <i class="card__bookmark bookmark bookmark_normal bookmark_orange "></i>
+                </div>
+                <div class="card__info info">
+                    <span class="info__date">28 Вересня, 2017</span>
+                    <span class="info__views">2045</span>
+                </div>
+                <h3 class="card__title">Літклуб Букмоль: розклад на квітень</h3>
+            </div>
+        </div>
+
+        <!------- ADVICE -------->
+        <div class="main__advice advice box underline_red">
+            <div class="advice__preview preview">
+                <div class="preview__info info">
+                    <span class="info__date">28 Вересня</span>
+                    <span class="info__views">2045</span>
+                </div>
+                <h2 class="preview__title">"Любий щоденнику...": ваш "настільний" психоаналітик</h2>
+                <button class="preview__btn btn btn_read">Читати</button>
+                <i class="preview__bookmark bookmark bookmark_normal bookmark_orange "></i>
+            </div>
+        </div>
+
+        <!------- TEEN-REVIEW -------->
+        <section class="main__teen-review teen-review box box_width_max box_bgcolor_green">
+            <div class="teen-review__wrapper">
+                <h3 class="teen-review__title">Teen review</h3>
+                <div class="main__card card">
+                    <span class="card__category">Огляди</span>
+                    <div class="card__img-wrapper">
+                        <img src="image/card_1.jpg" alt="" class="card__img">
+                        <i class="card__bookmark bookmark bookmark_normal bookmark_orange "></i>
+                    </div>
+                    <div class="card__info info">
+                        <span class="info__date">28 Вересня, 2017</span>
+                        <span class="info__views">2045</span>
+                    </div>
+                    <h3 class="card__title">"Поміж сірих сутінків" Рути Шепетіс: на противагу зброї</h3>
+                </div>
+                <div class="main__card card">
+                    <span class="card__category">Новини</span>
+                    <div class="card__img-wrapper">
+                        <img src="image/card_1.jpg" alt="" class="card__img">
+                        <i class="card__bookmark bookmark bookmark_normal bookmark_orange "></i>
+                    </div>
+                    <div class="card__info info">
+                        <span class="info__date">8 Листопада, 2017</span>
+                        <span class="info__views">3045</span>
+                    </div>
+                    <h3 class="card__title">У столиці запустили соціальний проект "Київ читає"</h3>
+                </div>
+                <div class="main__card card">
+                    <span class="card__category">Фільми</span>
+                    <div class="card__img-wrapper">
+                        <img src="image/card_1.jpg" alt="" class="card__img">
+                        <i class="card__bookmark bookmark bookmark_normal bookmark_orange "></i>
+                    </div>
+                    <div class="card__info info">
+                        <span class="info__date">28 Вересня, 2017</span>
+                        <span class="info__views">6345</span>
+                    </div>
+                    <h3 class="card__title">12 фільмів для дітей, знятих за мотивами відомих книжок</h3>
+                </div>
+            </div>
+        </section>
+
+        <!------- AUTORS-COLUMN -------->
+        <div class="main__autors-column autors-column box">
+            <img src="image/review__img.jpg" alt="" class="autors-column__img underline_red">
+            <div class="autors-column__preview preview">
+                <div class="preview__info info">
+                    <span class="info__date">22 Вересня, 2017</span>
+                    <span class="info__views">3045</span>
+                </div>
+                <h2 class="preview__title">Бути собою разом із Туве Янссон: 5 диваків Долини мумі-тролів</h2>
+                <button class="preview__btn btn btn_read">Читати</button>
+                <i class="preview__bookmark bookmark bookmark_normal bookmark_orange "></i>
+            </div>
+        </div>
+
+        <!------- CARDS -------->
+        <div class="main__cards box">
+            <div class="main__card card">
+                <span class="card__category">Огляди</span><img src="" alt="" class="card__img">
+                <div class="card__img-wrapper">
+                    <img src="image/card_1.jpg" alt="" class="card__img">
+                    <i class="card__bookmark bookmark bookmark_normal bookmark_orange "></i>
+                </div>
+                <div class="card__info info">
+                    <span class="info__date">15 Вересня, 2017</span>
+                    <span class="info__views">569</span>
+                </div>
+                <h3 class="card__title">Альтернативна історія: 4 аніме серіали, які граються з подіями ХХ століття</h3>
+            </div>
+            <div class="main__card card">
+                <span class="card__category">Афіша</span><img src="" alt="" class="card__img">
+                <div class="card__img-wrapper">
+                    <img src="image/card_1.jpg" alt="" class="card__img">
+                    <i class="card__bookmark bookmark bookmark_normal bookmark_orange "></i>
+                </div>
+                <div class="card__info info">
+                    <span class="info__date">28 Вересня, 2017</span>
+                    <span class="info__views">2045</span>
+                </div>
+                <h3 class="card__title">Що робити на вихідних у Києві</h3>
+            </div>
+            <div class="main__card card">
+                <span class="card__category">Корисні статті</span><img src="" alt="" class="card__img">
+                <div class="card__img-wrapper">
+                    <img src="image/card_1.jpg" alt="" class="card__img">
+                    <i class="card__bookmark bookmark bookmark_normal bookmark_orange "></i>
+                </div>
+                <div class="card__info info">
+                    <span class="info__date">28 Вересня, 2017</span>
+                    <span class="info__views">2045</span>
+                </div>
+                <h3 class="card__title">Як вивчають літературу там: досвід Швеції</h3>
+            </div>
+            <span class="more card__more"><i class="more__refresh"></i>Показати ще</span>
+        </div>
+    </main>
+    <footer class="footer box_width_max box_bgcolor_green">
+        <div class="footer__wrapper">
+            <div class="footer__subscription subscription">
+                <p class="subscription__title">Підписуйтесь на новивини від Bokmal</p>
+                <form action="" class="subscription__form">
+                    <label for="subscription__input" class="subscription__label">E-Mail</label>
+                    <input type="text" class="subscription__input" id="subscription__input">
+                    <button class="subscription__submit btn"><span class="subscription__arrow arrow-right"></span></button>
+                </form>
+            </div>
+            <div class="footer__social social">
+                <p class="social__title">Ми є у соціальних мережах</p>
+                <div class="social__icons">
+                    <span class="facebook"></span><span class="twitter m-l-25"></span><span class="instagram m-l-25"></span>
+                </div>
+            </div>
+            <div class="footer__copyright copyright">
+                <p class="copyright__text">&#9400; 2017 Букмоль. Незалежний культурний проект для дітей. Їхніх батьків
+                    та
+                    усіх-усіх небайдужих та охочих до читання.</p>
+                <p class="copyright__text">Всі права захищені. Використання будь-яких матеріалів, розміщених на сайті
+                    дозволяється за умовами посилання на Bokmal.com.ua</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
+
+<!-- <section class="elements">-->
+<!--<h1 class="elements__title">Active elements</h1>-->
+<!--<div class="elements-wrapper">-->
+<!--<button class="btn btn_read m-b-30">Читати</button>-->
+<!--<span class="more m-b-30"><i class="more__refresh"></i>Показати ще</span>-->
+<!--<div class="bookmark-wrapper m-b-30"><i class="bookmark bookmark_normal bookmark_orange "></i><i class="bookmark bookmark_small bookmark_black m-l-25"></i></div>-->
+<!--<span class="search m-b-30"></span>-->
+<!--<span class="arrow-right m-b-30"></span>-->
+<!--<div class="social m-b-30">-->
+<!--<span class="facebook"></span><span class="twitter m-l-25"></span><span class="google m-l-25"></span></div>-->
+<!--<button class="btn btn__education m-b-30">Навчання</button>-->
+<!--<div class="pagination m-b-30">-->
+<!--<span class="pagination__chevron_left pagination__chevron_active"></span>-->
+<!--<span class="pagination__content">1/3</span>-->
+<!--<span class="pagination__chevron_right"></span>-->
+<!--</div>-->
+<!--<div class="sort">-->
+<!--<ul class="sort__list">-->
+<!--<li class="sort__item">-->
+<!--<span href="" class="sort__title">Сортувати за:</span>-->
+<!--</li>-->
+<!--<li class="sort__item sort__item_active">-->
+<!--<a href="" class="sort__link">Популярністю</a>-->
+<!--</li>-->
+<!--<li class="sort__item">-->
+<!--<a href="" class="sort__link">Новизною</a>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div> -->
+<!--</section>-->

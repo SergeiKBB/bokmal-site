@@ -1,0 +1,12 @@
+.copyright {
+    width: 360px;
+
+    &__text {
+        margin: 0;
+        @include text-regular(PN, semi);
+        color: $text-l-color;
+        letter-spacing: 0.5px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+}

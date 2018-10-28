@@ -1,0 +1,41 @@
+.menu {
+  @include button-text(semi);
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__link {
+    position: relative;
+    color: $text-color;
+    
+    &:hover {
+      text-decoration: none;
+      color: $text-color;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 50%;
+        width: 60%;
+        height: 2px;
+        transform: translate(-50%);
+        background-color: $active-d-color;
+      }
+    }
+
+    &:active {
+      color: $active-d-color;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.advice {
+    position: relative;
+    padding: 85px 0;
+    &::after {
+        content: "Поради";
+        position: absolute;
+        top: -25px;
+        left: 0;
+        transform: translate(0, -50%);
+        @include text-regular(PN,semi);
+        text-transform: uppercase;
+        color: $active-color;
+    }
+    
+    
+    &__preview {
+        position: relative;
+        width: 550px;
+        margin-left: 40px;
+        background-color: $background-color;
+        &::before {
+            position: absolute;
+            top: 85px;
+            left: 0;
+            transform: translate(-50%);
+        }
+    }
+}

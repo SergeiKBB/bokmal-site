@@ -1,0 +1,57 @@
+.sidebar {
+  position: absolute;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+
+  &__band {
+    z-index: 10;
+    width: fit-content;
+    padding: 30px 15px;
+    border: 1px solid $line-d-color;
+    border-bottom: none;
+    background-color: $background-color;
+  }
+
+  &__navigation {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s;
+    background-color: $background-color;
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked ~ .sidebar__band .sidebar__burger  {
+        display: none;
+      }
+
+    &:checked ~ .sidebar__band .sidebar__close  {
+      display: block;
+    }
+
+    &:checked ~ .sidebar__navigation {
+      transform: translate(100%);
+
+    }
+  }
+
+  &__burger {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  &__close {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+
+
+

@@ -1,0 +1,27 @@
+.preview {
+    padding: 30px;
+    border: 1px solid $line-d-color;
+    background-color: $background-color;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: $main-kids-color;
+    }
+
+    &__title {
+        width: 450px;
+        margin: 30px 0;
+        @include heading2(extra);
+        color: $text-color;
+    }
+
+    &__bookmark {
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+        transform: translate(0, 50%);
+    }
+}

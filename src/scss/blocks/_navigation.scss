@@ -1,0 +1,45 @@
+.navigation {
+  display: flex;
+  padding: 150px 120px 0;
+  border: 1px solid $line-d-color;
+  border-bottom: none;
+  border-left: none;
+
+  &:target {
+    display: flex;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    pointer-events: none;
+    @include heading3(semi);
+    text-transform: uppercase;
+    color: $text-color;
+  }
+
+  &__radio {
+    display: none;
+
+    &:checked ~ .navigation__link {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -47px;
+        top: calc(50% - 2px);
+        display: inline-block;
+        width: 32px;
+        height: 2px;
+        background-color: $active-color;
+      }
+    }
+  }
+}

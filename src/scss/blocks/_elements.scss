@@ -1,0 +1,277 @@
+.elements {
+  &__title {
+    @include heading2(semi);
+    text-transform: uppercase;
+    color: $text-l-color;
+    margin-bottom: 30px;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.btn {
+  @extend  %btn;
+  max-width: 100px;
+  cursor: pointer;
+
+  &_read {
+    &:hover {
+      background-color: $active-d-color;
+    }
+  }
+
+  &__education {
+    color: $text-color;
+    background-color: $background-color;
+    border: 1px solid $line-d-color;
+    &:hover {
+      border-color: $active-d-color;
+    }
+  }
+}
+
+.more {
+  @include button-text(semi);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__refresh {
+    @include icon("\f01e");
+    font-size: 20px;
+    margin-right: 20px;
+    transition: .25s;
+  }
+
+  &:hover {
+    color: $active-d-color;
+    & .more__refresh {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.bookmark {
+  @include icon("\f02e");
+  font-weight: 100;
+  cursor: pointer;
+
+  &_normal {
+    font-size: 26px;
+
+    &:hover {
+      color: $active-d-color;
+    }
+
+    &:active {
+      font-weight: 900;
+    }
+  }
+
+  &_small {
+    font-size: 16px;
+
+    &:active {
+      font-weight: 900;
+    }
+
+
+  }
+
+  &_orange {
+    color: $active-color;
+  }
+
+  &_black {
+    color: $text-color;
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.search {
+  @include icon("\f002");
+  font-size: 20px;
+  cursor: pointer;
+
+  &:hover {
+    color: $active-d-color;
+  }
+}
+
+.arrow-right {
+  @include icon("\f061");
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.social {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.facebook {
+  @include icon("\f09a");
+  &::before {
+    font-family: "Font Awesome 5 Brands";
+  }
+
+  &:hover {
+    color: $facebook-color;
+  }
+}
+
+.twitter {
+  @include icon("\f099");
+  &::before {
+    font-family: "Font Awesome 5 Brands";
+  }
+
+  &:hover {
+    color: $twitter-color;
+  }
+}
+
+.google {
+  @include icon("\f0d5");
+  &::before {
+    font-family: "Font Awesome 5 Brands";
+  }
+
+  &:hover {
+    color: $google-color;
+  }
+}
+
+.instagram {
+  @include icon("\f16d");
+  &::before {
+    font-family: "Font Awesome 5 Brands";
+  }
+
+  &:hover {
+    color: $google-color;
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+
+  &__chevron {
+    &_active {
+      color: $line-d-color;
+    }
+
+    &_left {
+      @include icon("\f053");
+    }
+    &_right {
+      @include icon("\f054");
+    }
+  }
+
+  &__content {
+    @include text-regular(PN,semi);
+    margin: 0 20px;
+  }
+}
+
+.sort {
+  cursor: pointer;
+  &__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    @include button-text(semi);
+  }
+
+  &__item {
+    margin: 0;
+
+    &:hover a{
+        text-decoration: none;
+        color: $text-color;
+    }
+
+    &:nth-child(n) {
+      display: flex;
+      align-items: center;
+      &::after {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 10px;
+        margin: 0 10px;
+        background-color: $text-l-40-color;
+      }
+    }
+
+    &:first-child {
+      margin-right: 10px;
+      &::after {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+    &_active a{
+      color: $text-color;
+    }
+  }
+
+  &__link {
+    color: $text-l-40-color;
+  }
+
+  &__title {
+    color: $text-l-40-color;
+  }
+
+
+}
+
+.info {
+  display: flex;
+  @include text-regular(PN, regular);
+  color: $text-l-color;
+  font-size: 12px;
+
+  &__date {
+    @include icon('\f133');
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    margin-right: 15px;
+
+    &::before {
+      margin-right: 5px;
+      font-size: 18px;
+    }
+  }
+
+  &__views {
+    @include icon('\f06e');
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    margin-right: 10px;
+
+    &::before {
+      margin-right: 5px;
+      font-size: 18px;
+    }
+  }
+}
+
